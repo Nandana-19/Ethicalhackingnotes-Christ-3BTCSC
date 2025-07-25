@@ -72,3 +72,117 @@ Username: kali
 
 Password: kali
 
+DAY 3:
+
+## 🗂️ **1. File & Directory Management**
+
+| **Command**                  | **Description**                                     |
+| ---------------------------- | --------------------------------------------------- |
+| `ls`                         | Lists files and directories in the current location |
+| `ls -l`                      | Lists with details (size, date, permissions)        |
+| `cd foldername`              | Changes directory to the specified folder           |
+| `cd ..`                      | Goes up one directory level                         |
+| `pwd`                        | Displays the current directory path                 |
+| `mkdir foldername`           | Creates a new folder                                |
+| `rm filename`                | Deletes the specified file                          |
+| `rm -r foldername`           | Deletes a folder and its contents                   |
+| `touch file.txt`             | Creates an empty file named `file.txt`              |
+| `cp source.txt dest.txt`     | Copies file from source to destination              |
+| `mv oldname.txt newname.txt` | Renames or moves a file                             |
+
+---
+
+## 📄 **2. Viewing & Editing Files**
+
+| **Command**           | **Description**                              |
+| --------------------- | -------------------------------------------- |
+| `cat file.txt`        | Displays contents of a file                  |
+| `less file.txt`       | Opens file for scrolling (press `q` to quit) |
+| `nano file.txt`       | Opens file in the Nano text editor           |
+| `vim file.txt`        | Opens file in Vim editor (advanced)          |
+| `head -n 10 file.txt` | Shows the first 10 lines of a file           |
+| `tail -n 10 file.txt` | Shows the last 10 lines of a file            |
+
+---
+
+## 🔧 **3. System & Package Management**
+
+| **Command**               | **Description**                             |
+| ------------------------- | ------------------------------------------- |
+| `sudo`                    | Runs a command with root (admin) privileges |
+| `apt update`              | Updates the list of available packages      |
+| `apt upgrade`             | Installs the latest versions of packages    |
+| `apt install packagename` | Installs a new software package             |
+| `apt remove packagename`  | Removes an installed package                |
+| `clear`                   | Clears the terminal screen                  |
+| `reboot`                  | Reboots the system                          |
+| `shutdown now`            | Immediately shuts down the system           |
+
+---
+
+## 🔍 **4. Searching & Permissions**
+
+| **Command**                | **Description**                                  |
+| -------------------------- | ------------------------------------------------ |
+| `find . -name "file.txt"`  | Searches for `file.txt` in the current directory |
+| `grep "word" file.txt`     | Searches for "word" in `file.txt`                |
+| `chmod 755 file.sh`        | Changes permissions of a file                    |
+| `chown user:user file.txt` | Changes the ownership of a file                  |
+
+---
+
+## 📊 **5. System Information**
+
+| **Command**          | **Description**                              |
+| -------------------- | -------------------------------------------- |
+| `uname -a`           | Shows system information (kernel, OS)        |
+| `top` / `htop`       | Shows running processes and system usage     |
+| `df -h`              | Displays disk usage in human-readable form   |
+| `free -h`            | Shows memory (RAM) usage                     |
+| `whoami`             | Shows the current logged-in user             |
+| `ifconfig` or `ip a` | Displays network interfaces and IP addresses |
+
+---
+
+##  **6. Shortcuts & Tips**
+
+| **Key/Command** | **Action**                               |
+| --------------- | ---------------------------------------- |
+| `Tab`           | Auto-completes file/folder names         |
+| `Ctrl + C`      | Cancels a running command                |
+| `Ctrl + L`      | Clears the screen (like `clear`)         |
+| `Ctrl + D`      | Logs out of the current terminal session |
+
+Here’s a clean **table with brief descriptions** for the Linux commands you listed, along with a small introductory paragraph:
+
+---
+
+### 📝 **Introduction**
+
+Linux provides a powerful terminal where you can manage files, processes, and the system using simple commands. Below is a list of essential Linux commands that every beginner should know. These commands help with navigation, file operations, permissions, and system monitoring.
+
+---
+
+### **Linux Commands Table**
+
+| **Command** | **Description**                                           |
+| ----------- | --------------------------------------------------------- |
+| `ls`        | Lists files and folders in the current directory          |
+| `cd`        | Changes the current directory                             |
+| `pwd`       | Prints the current working directory path                 |
+| `mkdir`     | Creates a new directory                                   |
+| `rmdir`     | Deletes an empty directory                                |
+| `touch`     | Creates an empty file                                     |
+| `rm`        | Deletes files or directories (`-r` for folders)           |
+| `cp`        | Copies files or directories                               |
+| `mv`        | Moves or renames files and directories                    |
+| `man`       | Opens the manual/help page for a command (e.g., `man ls`) |
+| `echo`      | Prints text to the terminal (e.g., `echo Hello`)          |
+| `kill`      | Sends a signal (usually stop) to a process by its PID     |
+| `chmod`     | Changes file or folder permissions                        |
+| `chown`     | Changes the owner of a file or folder                     |
+| `ps`        | Shows current running processes                           |
+| `top`       | Real-time display of processes and system usage           |
+| `df`        | Shows disk space usage on mounted file systems            |
+
+
