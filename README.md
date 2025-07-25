@@ -184,5 +184,72 @@ Linux provides a powerful terminal where you can manage files, processes, and th
 | `ps`        | Shows current running processes                           |
 | `top`       | Real-time display of processes and system usage           |
 | `df`        | Shows disk space usage on mounted file systems            |
+DAY 4:
+
+
+### 1. **IPv4 (Internet Protocol version 4)**
+
+* **Definition**: IPv4 is the fourth version of the Internet Protocol used to identify devices on a network using an addressing system.
+* **Address Format**: 32-bit address (e.g., `192.168.1.1`)
+* **Total Addresses**: About **4.3 billion** unique addresses.
+* **Structure**: Written in **dot-decimal notation** (four numbers separated by dots).
+* **Limitation**: Because of the growing number of internet devices, IPv4 addresses are running out.
+
+---
+
+### 2. **IPv6 (Internet Protocol version 6)**
+
+* **Definition**: IPv6 is the newer version of the Internet Protocol designed to replace IPv4.
+* **Address Format**: 128-bit address (e.g., `2001:0db8:85a3:0000:0000:8a2e:0370:7334`)
+* **Total Addresses**: Around **340 undecillion** (virtually unlimited).
+* **Structure**: Written in **hexadecimal** and separated by colons.
+* **Advantage**: Solves the IPv4 exhaustion problem and offers better routing and security features.
+
+---
+
+### 3. **MAC ID (Media Access Control Address)**
+
+* **Definition**: A MAC ID (or MAC address) is a **unique hardware identifier** assigned to a network interface card (NIC) by the manufacturer.
+* **Format**: 48-bit address, usually shown as `00:1A:2B:3C:4D:5E`
+* **Purpose**: Used for identifying devices within a **local network (LAN)**.
+* **Cannot Be Changed**: It's a physical address tied to the device (though it can be spoofed).
+
+---
+
+### 4. **TCP (Transmission Control Protocol)**
+
+* **Definition**: TCP is a **connection-oriented** protocol that ensures **reliable communication** between two devices.
+* **Features**:
+
+  * Data is sent in a sequence.
+  * Ensures data reaches correctly (error checking).
+  * Slower but **more reliable**.
+* **Examples**: Used in applications like **web browsing (HTTP/HTTPS)**, **email (SMTP)**, and **file transfers (FTP)**.
+
+---
+
+### 5. **UDP (User Datagram Protocol)**
+
+* **Definition**: UDP is a **connectionless** protocol used for fast, **non-reliable communication**.
+* **Features**:
+
+  * No error checking or guaranteed delivery.
+  * Much **faster** than TCP.
+* **Examples**: Used in **video streaming**, **online gaming**, and **VoIP (Voice over IP)**.
+
+---
+
+### Comparison Table:
+
+| Feature     | TCP                        | UDP                         |
+| ----------- | -------------------------- | --------------------------- |
+| Connection  | Connection-oriented        | Connectionless              |
+| Speed       | Slower                     | Faster                      |
+| Reliability | High (guaranteed delivery) | Low (no delivery guarantee) |
+| Use Case    | Email, Web browsing        | Gaming, Streaming           |
+
+---
+
+
 
 
