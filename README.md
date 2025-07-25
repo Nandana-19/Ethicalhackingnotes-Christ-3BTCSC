@@ -249,6 +249,65 @@ DAY 4:
 | Use Case    | Email, Web browsing        | Gaming, Streaming           |
 
 ---
+### 🔍 **Reconnaissance in Cybersecurity**
+
+**Definition**:
+**Reconnaissance** is the **first phase** of the ethical hacking or cyberattack lifecycle. It involves **gathering information** about a target system, network, or organization **before launching an attack**. Think of it like a thief studying a building before breaking in.
+
+---
+
+### 🧠 **Purpose of Reconnaissance**
+
+* To **understand the target's environment**
+* Identify **vulnerabilities**, **open ports**, **IP addresses**, **technologies used**
+* Reduce chances of **detection** during the actual attack
+* Plan effective attacks or penetration tests
+
+---
+
+### 🛠️ **Types of Reconnaissance**
+
+| Type              | Description                                                                                                                      |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Passive Recon** | Collecting info **without interacting** directly with the target. Example: looking at social media, WHOIS data, Google searches. |
+| **Active Recon**  | Directly engaging with the target to gather information. Example: scanning networks, pinging devices, port scanning.             |
+
+---
+
+### 🔧 **Common Recon Tools**
+
+| Tool             | Use                                                            |
+| ---------------- | -------------------------------------------------------------- |
+| **Nmap**         | Network scanning, open ports, services                         |
+| **Wireshark**    | Packet analysis (network traffic)                              |
+| **theHarvester** | Email, subdomain, and employee information gathering           |
+| **Maltego**      | Visual link analysis for people, companies, domains, and IPs   |
+| **Google Dorks** | Using advanced search techniques to find sensitive information |
+
+---
+
+### 🧾 **Examples of Information Collected**
+
+* IP address ranges
+* Subdomains
+* Open ports
+* Software versions
+* Employee names or emails
+* DNS records
+
+---
+
+### ⚠️ **Why It Matters**
+
+In ethical hacking, reconnaissance helps in:
+
+* Finding weak points before an attacker does
+* Strengthening defenses proactively
+* Simulating real-world attack planning for better security
+
+---
+
+
 
 
 
