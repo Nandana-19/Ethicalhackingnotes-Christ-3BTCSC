@@ -306,7 +306,226 @@ In ethical hacking, reconnaissance helps in:
 * Simulating real-world attack planning for better security
 
 ---
+1. Low Privilege User
+Definition:
+A low privilege user is an account configured with minimal permissions necessary to perform its intended tasks. This is a core part of the Principle of Least Privilege (PoLP), which ensures that users can only access what they strictly need.
 
+Characteristics:
+
+Cannot install software or change system-wide configurations.
+
+Limited access to files and directories (e.g., only their home folder).
+
+Restricted from managing other users or system processes.
+
+Cannot access sensitive system logs or security settings.
+
+Examples:
+
+Windows: Standard User account vs. Administrator.
+
+Linux/Unix: Non-root user (e.g., student account with no sudo rights).
+
+Corporate Environment: Employee account without admin rights on their workstation.
+
+Security Benefits:
+
+Reduces damage in case of account compromise.
+
+Prevents unauthorized installation of malicious software.
+
+Limits insider threats by restricting unnecessary access.
+
+Risks:
+
+Even with low privileges, attackers can:
+
+Steal accessible data.
+
+Use the account as a foothold to attempt privilege escalation.
+
+Participate in lateral movement within the network.
+
+2. SOC (Security Operations Center)
+Definition:
+A Security Operations Center (SOC) is a dedicated team and facility that monitors an organization’s IT infrastructure to detect, analyze, respond to, and prevent cybersecurity incidents.
+
+Key Objectives:
+
+Continuous monitoring: 24/7 real-time observation of security events.
+
+Incident detection: Identifying unusual or malicious activity.
+
+Incident response: Containing and mitigating active threats.
+
+Threat intelligence: Using external and internal sources to anticipate attacks.
+
+Compliance: Ensuring security standards meet legal and regulatory requirements.
+
+SOC Structure:
+
+Tier 1 – Alert Monitoring & Triage
+
+Receives alerts from SIEM systems.
+
+Filters false positives.
+
+Tier 2 – Incident Investigation
+
+Deep analysis of suspicious events.
+
+Determines impact and scope.
+
+Tier 3 – Threat Hunting & Response
+
+Proactive search for hidden threats.
+
+Develops detection rules.
+
+SOC Manager
+
+Oversees operations.
+
+Coordinates incident communication.
+
+Common SOC Tools:
+
+SIEM: Splunk, IBM QRadar, ArcSight.
+
+Endpoint Detection & Response (EDR): CrowdStrike, SentinelOne.
+
+Intrusion Detection Systems (IDS): Snort, Suricata.
+
+Threat Intelligence Platforms (TIPs).
+
+Example Workflow:
+
+SOC receives alert from SIEM.
+
+Analyst checks logs for unusual login activity.
+
+Incident escalated if suspicious.
+
+Response team isolates affected system.
+
+Incident is documented for future prevention.
+
+3. Data Exfiltration
+Definition:
+Data exfiltration is the unauthorized transfer of sensitive data from within an organization’s network to an external location controlled by an attacker.
+
+Common Targets:
+
+Personally Identifiable Information (PII).
+
+Financial data.
+
+Intellectual property.
+
+Login credentials.
+
+Methods of Data Exfiltration:
+
+Manual methods: Using USB drives, CDs, smartphones.
+
+Over the network:
+
+Emailing to personal accounts.
+
+Uploading to cloud storage (Google Drive, Dropbox).
+
+Using file transfer protocols (FTP, SFTP).
+
+Covert channels:
+
+DNS tunneling.
+
+Embedding data in images (steganography).
+
+HTTPS traffic to hide malicious transfers.
+
+Causes:
+
+Insider threats.
+
+Compromised credentials.
+
+Malware infections.
+
+Exploiting unsecured APIs.
+
+Detection Techniques:
+
+Monitoring unusual network traffic volume.
+
+Detecting uploads to unknown domains.
+
+Data Loss Prevention (DLP) systems.
+
+Prevention:
+
+Enforce encryption for sensitive data.
+
+Use DLP solutions.
+
+Apply strict access controls.
+
+Employee awareness training.
+
+4. Privilege Escalation
+Definition:
+Privilege escalation occurs when an attacker gains higher-level permissions than initially granted, allowing them to perform unauthorized actions.
+
+Types:
+
+Vertical Privilege Escalation:
+Gaining higher privileges than assigned (e.g., user → admin/root).
+
+Horizontal Privilege Escalation:
+Accessing resources of another account with the same privilege level (e.g., user A accessing user B’s emails).
+
+Techniques:
+
+Exploiting unpatched software vulnerabilities.
+
+Weak or misconfigured file permissions.
+
+Credential theft (pass-the-hash, keylogging).
+
+Exploiting SUID binaries in Linux.
+
+DLL injection or malicious service creation in Windows.
+
+Example Attack Path:
+
+Attacker compromises a low privilege account.
+
+Exploits vulnerability to gain administrator rights.
+
+Accesses sensitive files or deploys malware.
+
+Potentially performs data exfiltration.
+
+Mitigation:
+
+Apply timely patches and updates.
+
+Enforce PoLP for all accounts.
+
+Monitor logs for unusual privilege changes.
+
+Use Multi-Factor Authentication (MFA).
+
+Implement Privileged Access Management (PAM) tools.
+
+How They Connect in a Real Attack
+Initial Access – Attacker compromises a low privilege user (via phishing or stolen credentials).
+
+Privilege Escalation – Attacker gains higher privileges to access more resources.
+
+Data Exfiltration – Sensitive files are copied to attacker-controlled servers.
+
+SOC Detection – SOC detects unusual activity, investigates, and responds
 
 
 
